@@ -294,7 +294,9 @@ function sahara_river() {
  * @return {Number}
  *
  */
-
+function addNumbers( number1, number2 ) {
+  return number1 + number2;
+}
 
 /* Step 22
  *
@@ -307,7 +309,11 @@ function sahara_river() {
  * @return {Bool}
  *
  */
-
+function installLinux ( linuxDistro ) {
+  if ( linuxFlavors.indexOf(linuxDistro) > -1) {
+    return true;
+  } return false;
+}
 
 /* Step 23
  *
