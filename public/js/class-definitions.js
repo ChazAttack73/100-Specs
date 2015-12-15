@@ -20,7 +20,7 @@ var videogame_system = "Atari";
  * and assign the value of sahara_animal to "The Addax"
  *
  */
-
+var sahara_animal = "The Addax";
 
 /* Step 4
  *
@@ -29,7 +29,7 @@ var videogame_system = "Atari";
  * each planet in our solar system, in order of distance from the sun
  * Capitalize the names.
  */
-
+var planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"];
 
 /* Step 5
  *
@@ -38,7 +38,7 @@ var videogame_system = "Atari";
  * each galilean moon of Jupiter
  *
  */
-
+var galilean_moons = ["Io", "Europa", "Ganymede", "Callisto"];
 
 /* Step 6 φ
  *
