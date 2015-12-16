@@ -419,20 +419,22 @@ function favoritePlanet () {
  *   earnMoney
  *
  */
-var Person = function ( name, money, age, gender ) {
+function Person ( name, money, age, gender ) {
   this.name = name;
   this.money = money;
   this.age = age;
   this.gender = gender;
 
   Person.prototype.spendMoney = function ( amount ) {
-    return money - amount;
+    this.money = this.money - amount;
+    return this.money;
   };
 
   Person.prototype.earnMoney  = function ( amount ) {
-    return money + amount;
+    this.money = this.money + amount ;
+    return this.money;
   };
-};
+}
 
 /* Step 28
  *
