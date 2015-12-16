@@ -332,7 +332,9 @@ function installLinux ( linuxDistro ) {
  * @return {Bool when False, String when True}
  *
  */
+function drink ( beer ) {
 
+}
 
 /* Step 24
  *
