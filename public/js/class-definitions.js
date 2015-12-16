@@ -447,7 +447,11 @@ function Person ( name, money, age, gender ) {
  * @return {String}
  *
  */
-
+function purchaseLaptop ( laptop ) {
+  if ( laptopCosts.hasOwnProperty ( laptop ) ) {
+    return laptopCosts[laptop].toString();
+  } return -1;
+}
 
 /* Step 29
  *
