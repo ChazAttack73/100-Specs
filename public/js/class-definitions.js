@@ -310,7 +310,7 @@ function addNumbers( number1, number2 ) {
  *
  */
 function installLinux ( linuxDistro ) {
-  if ( linuxFlavors.indexOf(linuxDistro) > -1) {
+  if ( linuxFlavors.indexOf( linuxDistro ) > -1) {
     return true;
   } return false;
 }
@@ -333,9 +333,15 @@ function installLinux ( linuxDistro ) {
  *
  */
 function drink ( beerName ) {
+  if ( Array.isArray ( beers[beerName] ) ) {
+    return "This " + beerName  + " is " + beers[beerName][0] + " and " + beers[beerName][1] + ".";
+  }
+
   if ( beers.hasOwnProperty( beerName ) ) {
-      return "This " + beerName + " is " + beers[beerName] + ".";
-    } return false;
+    return "This " + beerName + " is " + beers[beerName] + ".";
+  }
+
+  return false;
 }
 
 /* Step 24
@@ -364,7 +370,20 @@ function browseURL ( browserName ) {
  * @return {String}
  *
  */
+ //var livingOrganismClassification = ["Kingdom", "Phylum", "Class", "Order", "Family", "Genus", "Species"];
+function listLivingOrgClass () {
+  var list = document.createElement("ul");
 
+  for ( var i = 0; i < livingOrganismClassification.length; i++ ) {
+    console.log(livingOrganismClassification.length);
+    var item = document.createElement("li");
+
+    item.appendChild( document.createTextNode( livingOrganismClassification[i] ) );
+
+    list.appendChild( item );
+  }
+  return list;
+}
 
 /* Step 26
  *
