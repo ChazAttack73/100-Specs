@@ -332,9 +332,12 @@ function installLinux ( linuxDistro ) {
  * @return {Bool when False, String when True}
  *
  */
-function drink ( beer ) {
-
+function drink ( beerName ) {
+  if ( beers.hasOwnProperty( "beerName" ) ) {
+    return "This " + beerName + " is " + beers.beerName + ".";
+  } return false;
 }
+    console.log(drink("IPA"));
 
 /* Step 24
  *
