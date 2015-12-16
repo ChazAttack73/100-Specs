@@ -372,17 +372,6 @@ function browseURL ( browserName ) {
  */
  //var livingOrganismClassification = ["Kingdom", "Phylum", "Class", "Order", "Family", "Genus", "Species"];
 function listLivingOrgClass () {
-  var list = document.createElement("ul");
-
-  for ( var i = 0; i < livingOrganismClassification.length; i++ ) {
-    console.log(livingOrganismClassification.length);
-    var item = document.createElement("li");
-
-    item.appendChild( document.createTextNode( livingOrganismClassification[i] ) );
-
-    list.appendChild( item );
-  }
-  return list;
 }
 
 /* Step 26
@@ -404,7 +393,9 @@ function listLivingOrgClass () {
  * @return {String}
  *
  */
+function favoritePlanet () {
 
+}
 
 /* Step 27
  *
@@ -428,7 +419,20 @@ function listLivingOrgClass () {
  *   earnMoney
  *
  */
+var Person = function ( name, money, age, gender ) {
+  this.name = name;
+  this.money = money;
+  this.age = age;
+  this.gender = gender;
 
+  Person.prototype.spendMoney = function ( amount ) {
+    return money - amount;
+  };
+
+  Person.prototype.earnMoney  = function ( amount ) {
+    return money + amount;
+  };
+};
 
 /* Step 28
  *
