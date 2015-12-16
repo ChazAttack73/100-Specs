@@ -464,7 +464,11 @@ function purchaseLaptop ( laptop ) {
  * @return {Bool}
  *
  */
-
+var canTalkAbout = function ( club ) {
+  if ( club === "Fight Club" ) {
+    return false;
+  } return true;
+};
 
 /* Step 30
  *
@@ -486,7 +490,13 @@ function purchaseLaptop ( laptop ) {
  *   write
  *
  */
+function Pen ( color ) {
+  this.color = color;
 
+  Pen.prototype.write = function ( message ) {
+    color.concat( message );
+  };
+}
 
 /* Step 31
  *
@@ -514,7 +524,16 @@ function purchaseLaptop ( laptop ) {
  *   grow
  *
  */
+function Garden ( plantsTotal ) {
+  var isWatered = false;
 
+  Garden.prototype.water = function () {
+
+  };
+  Garden.prototype.grow = function () {
+
+  };
+}
 
 /* Step 32
  *
