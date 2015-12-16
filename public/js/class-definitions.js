@@ -333,11 +333,10 @@ function installLinux ( linuxDistro ) {
  *
  */
 function drink ( beerName ) {
-  if ( beers.hasOwnProperty( "beerName" ) ) {
-    return "This " + beerName + " is " + beers.beerName + ".";
-  } return false;
+  if ( beers.hasOwnProperty( beerName ) ) {
+      return "This " + beerName + " is " + beers[beerName] + ".";
+    } return false;
 }
-    console.log(drink("IPA"));
 
 /* Step 24
  *
@@ -350,7 +349,11 @@ function drink ( beerName ) {
  * @return {String if true else return false}
  *
  */
-
+function browseURL ( browserName ) {
+  if ( browsers.hasOwnProperty( browserName ) ) {
+    return browsers[browserName];
+  } return false;
+}
 
 /* Step 25
  *
