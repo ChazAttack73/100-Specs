@@ -372,6 +372,7 @@ function browseURL ( browserName ) {
  */
  //var livingOrganismClassification = ["Kingdom", "Phylum", "Class", "Order", "Family", "Genus", "Species"];
 function listLivingOrgClass () {
+
 }
 
 /* Step 26
@@ -494,7 +495,7 @@ function Pen ( color ) {
   this.color = color;
 
   Pen.prototype.write = function ( message ) {
-    color.concat( message );
+    color.toString().concat( message );
   };
 }
 
@@ -545,13 +546,24 @@ function Garden ( plantsTotal ) {
  * class
  *   SolarSystem
  * properties
- *   planets
+ *   planet
  * methods
  *   addPlanet
  *   removePlanet
  *
  */
+function SolarSystem( planet ) {
+  this.planet = planet;
 
+  SolarSystem.prototype.addPlanet = function() {
+
+  };
+
+  SolarSystem.prototype.removePlanet = function() {
+
+  };
+
+}
 
 /* Step 33
  *
